@@ -1,0 +1,508 @@
+
+/* =====================================
+   1. GLOBAL SETTINGS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b1120;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   2. NAVIGATION BAR
+===================================== */
+
+header {
+    width: 100%;
+    background-color: #111a2e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #263653;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+
+/* =====================================
+   3. HOME SECTION
+===================================== */
+
+.home {
+    max-width: 1200px;
+    min-height: 85vh;
+    margin: auto;
+    padding: 80px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.welcome {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.home-content h1 span {
+    color: #38bdf8;
+}
+
+.home-content h2 {
+    color: #94a3b8;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    color: #cbd5e1;
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0369a1;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn-outline:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+
+/* =====================================
+   4. PROFILE PHOTO
+===================================== */
+
+.home-image {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+
+    transition: transform 0.4s ease;
+}
+
+.home-image img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   5. COMMON SECTION SETTINGS
+===================================== */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 75px 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+
+/* =====================================
+   6. ABOUT SECTION
+===================================== */
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.about-content p {
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 16px;
+    line-height: 2;
+}
+
+
+/* =====================================
+   7. SKILLS SECTION
+===================================== */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #111a2e;
+    border: 1px solid #263653;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 5px 25px rgba(56, 189, 248, 0.12);
+}
+
+.skill-card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.skill-card p {
+    color: #cbd5e1;
+}
+
+
+/* =====================================
+   8. PROJECTS SECTION
+===================================== */
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #111a2e;
+    border: 1px solid #263653;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+    box-shadow: 0 5px 25px rgba(56, 189, 248, 0.12);
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-card .technology {
+    color: #7dd3fc;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/* =====================================
+   9. EDUCATION SECTION
+===================================== */
+
+.education-card {
+    max-width: 700px;
+    margin: auto;
+    background-color: #111a2e;
+    border-left: 4px solid #38bdf8;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.education-card h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.education-card p {
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   10. CONTACT SECTION
+===================================== */
+
+#contact {
+    text-align: center;
+}
+
+#contact > p {
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    color: #38bdf8;
+    text-decoration: none;
+    border: 1px solid #38bdf8;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #0284c7;
+    color: #ffffff;
+}
+
+
+/* =====================================
+   11. FOOTER
+===================================== */
+
+footer {
+    background-color: #111a2e;
+    border-top: 1px solid #263653;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+
+/* =====================================
+   12. RESPONSIVE DESIGN
+===================================== */
+
+@media screen and (max-width: 900px) {
+
+    .home {
+        gap: 25px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .home-image {
+        flex-basis: auto;
+    }
+
+    .home-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+    }
+
+    .home-content h2 {
+        font-size: 20px;
+    }
+
+    .home-buttons {
+        justify-content: center;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 20px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+}
+
+/* MOBILE NAVIGATION */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: #38bdf8;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        width: 100%;
+    }
+
+    .home-image {
+        margin-top: 30px;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
